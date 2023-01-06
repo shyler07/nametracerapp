@@ -37,8 +37,9 @@ body::-webkit-scrollbar {
 
 
 header{
-    padding-top: 2rem;
-    background-color: rgb(24, 128, 192);
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    background-color: rgb(5, 50, 103);
     color: white;
     /* relative normal  
     An element with position: relative; is positioned relative to its normal position.
@@ -61,7 +62,7 @@ header{
 .footer{
     padding-top: 0.6rem;
     background-color: rgb(24, 128, 192);
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 1em;
     overflow: auto;
 
@@ -69,7 +70,7 @@ header{
 }
 
 .footer-column>ul{
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 0.8rem ;
 }
 
@@ -77,24 +78,43 @@ header{
     margin-top: 0.3rem;
     margin-bottom: 0.4rem;
     font-weight: bold;
+    
 }
 .footer-column>ul>li{
     margin-bottom: 0.3rem;
- 
+    
 }
+
+
+
+
+
 .copyright{
     font-size: x-small;
     padding-bottom: 0.9rem;
 }
 
+/* visited link */
+a:visited {
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+  }
+
+  /* unvisited link */
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
 
 
 
 h1{
 
-    padding-top: 1rem;
+    padding-top:1.5rem;
+    padding-bottom:1rem;
+   
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .result-container h1{
@@ -147,22 +167,28 @@ h1{
 }
 
 
-
+.labels{
+    margin-top : 2.4rem;
+    font-weight: 600;
+}
 
 .text-container{
    
     display: flex;
     justify-content: center;
+    padding-left: 15rem;
+    padding-right: 15rem;
 
 }
 
 .name-text{
-  width: 45%;
+  width: 1rem;
   height: 2rem;
   margin-top: 2rem;
   text-align: center;
   font-size: large;
-  
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .btn-container{
@@ -212,6 +238,14 @@ h1{
     padding-top: 3rem;
     padding-bottom: 25%;
     background-color: rgb(255, 255, 255);
+/* for div paragraphh auto break */
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+ /* Non standard for webkit */
+     word-break: break-word;
+
+    
  }
  
  ul{
@@ -263,16 +297,18 @@ h1{
 
     body{
         width:  100%;
-        height: 100%;
+        height: auto;
+        min-height: 100% !important;
         position:relative;
         -ms-overflow-style: none; /* for Internet Explorer, Edge */
         scrollbar-width: none; /* for Firefox */
         overflow-y: scroll; 
     }
+    }
     
     body::-webkit-scrollbar {
         display: none; /* for Chrome, Safari, and Opera */
-      }
+    }
     
     .main-header{
         width:  100%;
@@ -301,7 +337,15 @@ h1{
         text-align: center;
         font-size: large;
         
-      }
+    }
+
+
+      .the-font{
+
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
 
       .font-label {
 
@@ -311,9 +355,10 @@ h1{
         height: 2rem;
         
     }
+
     
     
- }
+
 
 
 
