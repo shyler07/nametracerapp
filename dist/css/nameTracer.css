@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 header{
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    background-color: rgb(5, 50, 103);
+    background-color: rgb(24, 128, 192);
     color: white;
     /* relative normal  
     An element with position: relative; is positioned relative to its normal position.
@@ -135,23 +135,21 @@ h1{
     padding-top: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
 }
 
 .the-font label{
 
-    font-weight: 600;
-    padding-right: 0.2rem;
-    padding-top: 0.5rem;
-    padding-left: 0.8rem;
-    
+    margin: 0 1rem 0 1rem;
+
     
 }
 
 .font-label {
 
-    font-weight: 600;
-    font-size: 1rem;
-    width: 10%;
+    width: 20%;
     height: 2rem;
     
 }
@@ -159,8 +157,6 @@ h1{
 
 
 .page-label{
-    font-weight: 600;
-    font-size: 1rem;
     width: 10%;
     height: 2rem;
 
@@ -175,14 +171,16 @@ h1{
 .text-container{
    
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    align-items: center;
+
+   
 
 }
 
 .name-text{
-  width: 1rem;
+  width: 20rem;
   height: 2rem;
   margin-top: 2rem;
   text-align: center;
@@ -331,12 +329,15 @@ h1{
     }
 
     .name-text{
-        width: 60%;
-        height: 2rem;
-        margin-top: 2rem;
-        text-align: center;
-        font-size: large;
         
+        margin-top: 1rem;
+        font-size: small;
+        
+    }
+
+    .label-container{
+        margin-top: 1rem;
+        text-align: center;
     }
 
 
@@ -347,15 +348,8 @@ h1{
         justify-content: center;
     }
 
-      .font-label {
-
-        font-weight: 600;
-        font-size: 1rem;
-        width: 30%;
-        height: 2rem;
-        
-    }
-
+      
+ 
     
     
 
